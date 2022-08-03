@@ -50,6 +50,10 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+.hamburg {
+    display: none;
+    font-size: 35px;
+}
 .links ul{
     list-style: none;
     display: flex;
@@ -75,7 +79,8 @@ body{
     justify-content: space-between;
 }
 .picture img{
-    width: 592px;
+    width: 100%;
+    max-width: 592px;
 }
 .title {
     display: flex;
@@ -122,10 +127,60 @@ body{
     font-size: 25px;
 }
 .social-media ul li a{
+    transition: 0.1s;
     color: #FFFFFF;
+    text-decoration: none;
 }
 .social-media{
     position: fixed;
     bottom: 40px;
     left: 40px;
+}
+.social-media ul li a:hover {
+    transition: 0.1s;
+    font-size: 30px;
+    color: #94A1B2;
+}
+@media screen and (max-width: 1350px){
+    .social-media{
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px){
+    .description{
+        flex-direction: column;
+        transform: scaleY(-1);
+    }
+    .title{
+        transform: scaleY(-1);
+    }
+    .picture{
+        transform: scaleY(-1);
+    }
+    .navigation{
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width: 600px){
+    .title h1{
+        font-size: 40px;
+    }
+    .links{
+        display: none;
+    }
+    .hamburg{
+        display: flex;
+    }
+}
+@media screen and (max-width: 400px){
+    .title {
+        text-align: center;
+        align-items: center;
+    }
+    .title h2{
+        font-size: 14px;
+    }
+    .title p{
+        font-size: 15px;
+    }
 }
