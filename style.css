@@ -179,8 +179,10 @@ body{
     }
     .title h2{
         font-size: 14px;
+        font-weight: 400;
     }
     .title p{
         font-size: 15px;
+        font-weight: 400;
     }
 }
